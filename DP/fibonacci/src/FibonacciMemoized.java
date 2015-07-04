@@ -4,7 +4,8 @@ public class FibonacciMemoized {
 	private HashMap<Integer, Long> memoPad = new HashMap<Integer, Long>();
 	
 	public long computeFibonacciNumber(int n){
-		//base case
+		
+		//base case
 		if(n<=2)
 		{
 			return 1;
