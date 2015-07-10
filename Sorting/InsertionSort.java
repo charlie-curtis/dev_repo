@@ -18,7 +18,7 @@ public class InsertionSort extends Sorting {
 		sort(array1);
 		
 		System.out.println();
-		if(isSorted(array1)){
+		if(isOrdered(array1)){
 			System.out.println("I am sorted");
 		}
 		else{

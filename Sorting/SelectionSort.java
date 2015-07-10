@@ -25,7 +25,7 @@ public class SelectionSort extends Sorting {
 
 		int[] array1 = {11,7,9,4,2,0};
 		sort(array1);
-		if(isSorted(array1)){
+		if(isOrdered(array1)){
 			System.out.println("I am sorted");
 		}
 		else{

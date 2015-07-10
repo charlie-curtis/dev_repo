@@ -50,7 +50,7 @@ public class MergeSort extends Sorting {
 		
 		int[] test = {3,10,5,9,103,-23,0,-1,-1,-2,-3,-4,-5};
 		test = sort(test);
-		if(isSorted(test)){
+		if(isOrdered(test)){
 			System.out.println("I am sorted");
 		}
 		else{
