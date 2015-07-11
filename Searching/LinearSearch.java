@@ -1,4 +1,4 @@
-public class LinearSearch extends Search{
+public class LinearSearch{
 
 	protected static int search(int[] nums, int index){
 
