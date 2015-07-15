@@ -4,7 +4,7 @@ public class SolutionTester{
 
 		Solution test = new Solution();
 
-		System.out.println(test.countPrimes(31));
+		System.out.println(test.countPrimes(10));
 	}
 
 }
