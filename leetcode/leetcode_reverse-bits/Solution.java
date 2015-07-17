@@ -1,3 +1,9 @@
+/*The way this algorithm works is that it has two counters
+one of the counters is the MSB, the other is the LSB
+The LSB and MSB both decrement at teh same rate. 
+Iterate over the indices, if the LSB is a 1, append the one
+to the current index of the MSB. This appending is done using
+the integer 'count'*/
 public class Solution{
 
 	public int reverseBits(int n) {
