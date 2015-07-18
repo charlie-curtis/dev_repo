@@ -52,7 +52,7 @@ public class ListNode
             }
         
             temp.val = carryOver % 10;
-            System.out.print(temp.val + "->");
+           
             carryOver = carryOver>= 10 ? 1 : 0;
             //temp.next = new ListNode(0);
             //temp = temp.next
@@ -61,8 +61,7 @@ public class ListNode
         }
         //temp.next = null;
         //temp = null;
-        
-        System.out.println();
+
         return head;
     }
 }
