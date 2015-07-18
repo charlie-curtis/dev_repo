@@ -31,7 +31,7 @@ public class ListNodeTester
 		int[] testList1 = {5,5,5,2,2,3,6,3,6};
 		int[] testList2 = {5,3,4,9,7,9,2,6,9,1};
 
-		//1962979435 + 636322555
+		//1962979435 + 636322555 = 2599301990
 		
 		ListNode node1_1 = new ListNode(5);
 		ListNode node1_2 = new ListNode(5);

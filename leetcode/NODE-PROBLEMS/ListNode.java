@@ -28,40 +28,41 @@ public class ListNode
 		return head;
 	}
 
-
+    //WHY DIDN'T THE COMMENTED OLD VERSION DELETE THE LAST NODE IN THE LIST
+    //OMG
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     
-        int carryOver = 0, num1 = 0, num2 = 0, result = 0;
-        ListNode returnMe = new ListNode(0);
-        ListNode head = returnMe;
+        int carryOver = 0;
+        ListNode temp = new ListNode(0);
+        ListNode head = temp;
+        boolean firstIteration = true;
         
-        while(l1 != null || l2 != null || carryOver == 1){
-            
-            ListNode temp = new ListNode(0);
-            num1 = l1 == null? 0 : l1.val;
-            num2 = l2 == null? 0 : l2.val;
-            result = num1+num2+carryOver;
-            System.out.println("result is " + result);
-            
-            if(result >= 10){
-                System.out.println("carry 1 ran");
-                carryOver = 1;
-            }else{
-                System.out.println("Carry 0 ran");
-                carryOver = 0;
+        while(l1 != null || l2 != null || carryOver ==1){
+            if(!firstIteration){
+                temp.next = new ListNode(0);
+                temp = temp.next;
             }
-            
-            System.out.println("val is: " + result % 10);
-            returnMe.val = result % 10;
-            l1=  l1 == null? l1 : l1.next;
-            l2 = l2 == null? l2 : l2.next;
-            if(l1 != null || l2 != null || carryOver ==1){
-                //we running the loop again, boyz
-                returnMe.next = temp;
-                returnMe = returnMe.next;  
+            if(l1!= null){
+                carryOver += l1.val;
+                l1 = l1.next;
             }
+            if(l2!= null){
+                carryOver += l2.val;
+                l2 = l2.next;
+            }
+        
+            temp.val = carryOver % 10;
+            System.out.print(temp.val + "->");
+            carryOver = carryOver>= 10 ? 1 : 0;
+            //temp.next = new ListNode(0);
+            //temp = temp.next
+            firstIteration = false;
+            
         }
-        System.out.println("head is" + head.val);
+        //temp.next = null;
+        //temp = null;
+        
+        System.out.println();
         return head;
     }
 }
