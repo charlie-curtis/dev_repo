@@ -1,3 +1,4 @@
+import java.util.HashSet;
 public class ListNode
 {
 
@@ -63,6 +64,24 @@ public class ListNode
         //temp = null;
 
         return head;
+    }
+
+    public ListNode deleteDuplicates(ListNode head) {
+
+        ListNode previous = null;
+        ListNode returnMe = head;
+        HashSet<Integer> set = new HashSet<Integer>();
+
+        while(head!=null) {
+
+            if(!set.add(head.val)) {
+                previous.next = head.next;
+            }else {
+               previous = head; 
+            }
+            head = head.next;
+        }
+        return returnMe;
     }
 }
 
