@@ -83,5 +83,26 @@ public class ListNode
         }
         return returnMe;
     }
+
+    public ListNode removeElements(ListNode head, int val) {
+        
+        ListNode previous = null;
+        while(head != null && head.val == val){
+            head = head.next;
+        }
+        ListNode returnMe = head;
+        
+        while(head != null){
+            if(head.val == val){
+                previous.next = head.next;
+            }else{
+                previous = head;
+            }
+            head = head.next;
+        }
+        return returnMe;
+    }
 }
+
+
 
