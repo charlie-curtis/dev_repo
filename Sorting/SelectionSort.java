@@ -11,9 +11,6 @@ public class SelectionSort extends Sorting {
 					minValue = array[j];
 					replacementIndex=j;
 				}
-				else{
-					continue;
-				}
 			}
 			int temp = array[i];
 			array[i] = minValue;
