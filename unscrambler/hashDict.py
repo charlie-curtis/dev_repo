@@ -5,8 +5,9 @@ import sys
 
 def hashFile(file):
      f = open( "dictionary.txt", 'r')
+     f1 = open( file, "w");
      for line in f:
-	  print hashLine(line)
+	  f1.write(hashLine(line)+":"+line)
 
 def hashLine(line):
      minIndex = 0
