@@ -3,9 +3,15 @@
 import sys
 
 
-def hash(file):
-     print "I received " + file
+def hashFile(file):
+     f = open( "dictionary.txt", 'r')
+     for line in f:
+	  print hashLine(line)
 
+def hashLine(line):
+     
+     
+     
 
 
 if( len(sys.argv) < 2):
@@ -14,4 +20,4 @@ else:
      arg1 = sys.argv[1] 
 print "The resulting file will be saved to " + arg1
 
-hash(arg1)
+hashFile(arg1)
