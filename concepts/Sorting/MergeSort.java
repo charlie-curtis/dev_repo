@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class MergeSort extends Sorting {
 	
-	protected static int[] sort(int[] array){
+	public static int[] sort(int[] array){
 		
 		if(array.length==1){
 			return array;
