@@ -1,0 +1,12 @@
+puts "sup"
+Vagrant.configure(2) do |config|
+  
+  config.vm.box = "ubuntu/trusty64"
+  #config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.network :forwarded_port, guest:80, host:4567
+
+
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+  config.vm.synced_folder "../app_code", "/var/www/app_code", type: 'rsync'
+  config.gatling.rsync_on_startup = false 
+end
