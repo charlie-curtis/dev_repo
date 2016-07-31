@@ -1,0 +1,6 @@
+[submodule "vm/chef/cookbooks/java"]
+	path = vm/chef/cookbooks/java
+	url = git@github.com:agileorbit-cookbooks/java.git
+[submodule "vm/chef/cookbooks/apt"]
+	path = vm/chef/cookbooks/apt
+	url = https://github.com/opscode-cookbooks/apt.git
