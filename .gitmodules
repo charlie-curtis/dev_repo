@@ -22,3 +22,6 @@
 [submodule "chef/cookbooks/mysql"]
 	path = chef/cookbooks/mysql
 	url = https://github.com/opscode-cookbooks/mysql.git
+[submodule "chef/cookbooks/apache2"]
+	path = chef/cookbooks/apache2
+	url = git@github.com:svanzoest-cookbooks/apache2.git
