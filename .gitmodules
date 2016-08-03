@@ -1,24 +1,24 @@
-[submodule "vm/chef/cookbooks/java"]
-	path = vm/chef/cookbooks/java
+[submodule "chef/cookbooks/java"]
+	path = chef/cookbooks/java
 	url = git@github.com:agileorbit-cookbooks/java.git
-[submodule "vm/chef/cookbooks/apt"]
-	path = vm/chef/cookbooks/apt
+[submodule "chef/cookbooks/apt"]
+	path = chef/cookbooks/apt
 	url = https://github.com/opscode-cookbooks/apt.git
-[submodule "vm/chef/cookbooks/homebrew"]
-	path = vm/chef/cookbooks/homebrew
+[submodule "chef/cookbooks/homebrew"]
+	path = chef/cookbooks/homebrew
 	url = https://github.com/chef-cookbooks/homebrew.git
-[submodule "vm/chef/cookbooks/windows"]
-	path = vm/chef/cookbooks/windows
+[submodule "chef/cookbooks/windows"]
+	path = chef/cookbooks/windows
 	url = git@github.com:opscode-cookbooks/windows.git
-[submodule "vm/chef/cookbooks/chef_handler"]
-	path = vm/chef/cookbooks/chef_handler
+[submodule "chef/cookbooks/chef_handler"]
+	path = chef/cookbooks/chef_handler
 	url = git@github.com:opscode-cookbooks/chef_handler.git
-[submodule "vm/chef/cookbooks/build-essential"]
-	path = vm/chef/cookbooks/build-essential
+[submodule "chef/cookbooks/build-essential"]
+	path = chef/cookbooks/build-essential
 	url = https://github.com/opscode-cookbooks/build-essential.git
-[submodule "vm/chef/cookbooks/7-zip"]
-	path = vm/chef/cookbooks/7-zip
+[submodule "chef/cookbooks/7-zip"]
+	path = chef/cookbooks/7-zip
 	url = git@github.com:sneal/7-zip.git
-[submodule "vm/chef/cookbooks/mysql"]
-	path = vm/chef/cookbooks/mysql
+[submodule "chef/cookbooks/mysql"]
+	path = chef/cookbooks/mysql
 	url = https://github.com/opscode-cookbooks/mysql.git
