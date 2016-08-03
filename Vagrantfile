@@ -8,10 +8,9 @@ Vagrant.configure(2) do |config|
   config.vm.provision "chef_solo" do |chef|
     chef.cookbooks_path = [ "./chef/cookbooks", "./chef/site-cookbooks" ]
     chef.provisioning_path = "/tmp/vagrant-chef"
-    chef.add_recipe "helloworld"
-    chef.add_recipe "java"
-    chef.add_recipe "apache2"
-    #chef.add_recipe "mysql"
+    #chef.add_recipe "java"
+    #chef.add_recipe "apache2"
+    chef.add_recipe "my_mysql"
   end
 
   #sync the vagrant folder for now so I can test chef code manually	

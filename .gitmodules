@@ -31,3 +31,9 @@
 [submodule "chef/cookbooks/yum"]
 	path = chef/cookbooks/yum
 	url = git@github.com:opscode-cookbooks/yum.git
+[submodule "chef/cookbooks/smf"]
+	path = chef/cookbooks/smf
+	url = git@github.com:livinginthepast/smf.git
+[submodule "chef/cookbooks/rbac"]
+	path = chef/cookbooks/rbac
+	url = git@github.com:livinginthepast/rbac.git
