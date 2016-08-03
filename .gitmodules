@@ -25,3 +25,9 @@
 [submodule "chef/cookbooks/apache2"]
 	path = chef/cookbooks/apache2
 	url = git@github.com:svanzoest-cookbooks/apache2.git
+[submodule "chef/cookbooks/yum-mysql-community"]
+	path = chef/cookbooks/yum-mysql-community
+	url = git@github.com:opscode-cookbooks/yum-mysql-community.git
+[submodule "chef/cookbooks/yum"]
+	path = chef/cookbooks/yum
+	url = git@github.com:opscode-cookbooks/yum.git
