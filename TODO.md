@@ -1,0 +1,16 @@
+-Configure apache2 DocumentRoot in chef
+-Setup the default web directory and rsync it in vagrant
+-Setup correct apache permissions for those directories in chef
+
+-Create a mysql user & pass for the app
+-Choose a java web technology
+-Choose java framework
+-Get a basic java page displaying on the web
+-Create DB schema files
+-Get java talking to the DB
+-Setup Java IDE
+-Create a basic frontend that posts to the backend
+-Create a cron job for reading from the future-scheduled messages & enqueue in rabbitmq
+-Use RabbitMQ for reading requests that are to be sent meow
+-Setup Twilio? 
+-Setup Mailchimp?
