@@ -1,7 +1,6 @@
 Vagrant.configure(2) do |config|
   
   config.vm.box = "ubuntu/trusty64"
-  config.vm.provision :shell, path: "bootstrap.sh"
   config.vm.network :forwarded_port, guest:80, host:8080
   config.omnibus.chef_version = "12.8.1"
 
@@ -15,7 +14,6 @@ Vagrant.configure(2) do |config|
   end
   
 
-  #sync the vagrant folder for now so I can test chef code manually	
-  config.vm.synced_folder "./chef", "/home/vagrant/chef", disabled: false, type: 'rsync'
+  config.vm.synced_folder "./app", "/var/www/html", disabled: false, type: 'rsync'
   config.gatling.rsync_on_startup = false 
 end

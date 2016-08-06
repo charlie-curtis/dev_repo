@@ -1,7 +1,3 @@
--Configure apache2 DocumentRoot in chef
--Setup the default web directory and rsync it in vagrant
--Setup correct apache permissions for those directories in chef
-
 -Create a mysql user & pass for the app
 -Choose a java web technology
 -Choose java framework
