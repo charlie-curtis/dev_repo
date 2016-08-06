@@ -1,4 +1,3 @@
--Create a mysql user & pass for the app
 -Choose a java web technology
 -Choose java framework
 -Get a basic java page displaying on the web
