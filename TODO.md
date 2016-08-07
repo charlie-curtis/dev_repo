@@ -1,9 +1,9 @@
--Choose a java web technology
--Choose java framework
--Get a basic java page displaying on the web
+-Choose a python web technology
+-Choose python framework
+-Get a basic python page displaying on the web
 -Create DB schema files
--Get java talking to the DB
--Setup Java IDE
+-Get python talking to the DB
+-Setup Python IDE
 -Create a basic frontend that posts to the backend
 -Create a cron job for reading from the future-scheduled messages & enqueue in rabbitmq
 -Use RabbitMQ for reading requests that are to be sent meow
